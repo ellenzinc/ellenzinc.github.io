@@ -779,8 +779,9 @@ nav ul {
 	font-weight: bold;
 }
 
-li {
+nav li {
 	display: inline;
+	padding-left: 60px;
 }
 
 /* #Media Queries
