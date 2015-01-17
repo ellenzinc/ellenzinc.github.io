@@ -779,7 +779,9 @@ nav ul {
 	font-weight: bold;
 }
 
-
+li {
+	display: inline;
+}
 
 /* #Media Queries
 ================================================== */
