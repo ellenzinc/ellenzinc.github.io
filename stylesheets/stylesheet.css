@@ -774,7 +774,7 @@ footer a:hover {
 ================================================== */
 nav ul {
 	font-family:'Helvetica', 'Arial', 'Sans-Serif';
-	padding: 0px;
+	padding: 10px;
 	list-style: none;
 	font-weight: bold;
 }
