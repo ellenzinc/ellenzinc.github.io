@@ -770,6 +770,19 @@ footer a:hover {
 * html .clearfix {height: 1%;}
 .clearfix {display: block;}
 
+/* Haining Edit
+================================================== */
+nav ul {
+	font-family:'Helvetica', 'Arial', 'Sans-Serif';
+	padding: 0px;
+	list-style: none;
+	font-weight: bold;
+	display: inline;
+	margin-right: 20px;
+}
+
+
+
 /* #Media Queries
 ================================================== */
 
