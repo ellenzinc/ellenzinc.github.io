@@ -1,2 +1,6 @@
 name: Haining Wang, UC Davis
 markdown: kramdown
+collections:
+  publications:
+    output: true
+

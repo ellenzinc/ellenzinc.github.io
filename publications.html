@@ -1,0 +1,24 @@
+---
+layout: default
+title: Publications
+---
+
+<h3>Journal</h3>
+<ol>
+{% for paper in site.publications %}
+{% if paper.type == "article" %}
+    <li>	<span>{{ paper.author }}, "{{ paper.title }}," <i>{{ paper.journal }}</i>, vol. {{paper.volume}}, no.{{paper.number}}, {{paper.month}}, {{paper.year}} </span> </li>
+{% endif %}
+{% endfor %}
+</ol>
+
+<h3>Conference</h3>
+<ol>
+{% for paper in site.publications %}
+{% if paper.type == "inproceedings" %}
+    <li>        <span>{{ paper.author }}, "{{ paper.title }}," <i>{{ paper.booktitle }}</i>, {{paper.month}}, {{paper.year}} </span> </li>
+{% endif %}
+{% endfor %}
+</ol>
+
+
