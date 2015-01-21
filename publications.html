@@ -3,9 +3,10 @@ layout: default
 title: Publications
 ---
 
+{% assign sorted_pages = (site.publications | sort:'sort_key','last') %}
 <h3>Journal</h3>
 <ol>
-{% for paper in site.publications %}
+{% for paper in sorted_pages reversed %}
 {% if paper.type == "article" %}
     <li>	<span>{{ paper.author }}, "{{ paper.title }}," <i>{{ paper.journal }}</i>, vol. {{paper.volume}}, no.{{paper.number}}, {{paper.month}}, {{paper.year}} </span> </li>
 {% endif %}
@@ -14,7 +15,7 @@ title: Publications
 
 <h3>Conference</h3>
 <ol>
-{% for paper in site.publications %}
+{% for paper in sorted_pages reversed %}
 {% if paper.type == "inproceedings" %}
     <li>        <span>{{ paper.author }}, "{{ paper.title }}," <i>{{ paper.booktitle }}</i>, {{paper.month}}, {{paper.year}} </span> </li>
 {% endif %}
