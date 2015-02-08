@@ -8,7 +8,7 @@ title: Publications
 <ol>
 {% for paper in sorted_pages reversed %}
 {% if paper.type == "article" %}
-    <li>	<span>{{ paper.author }}, "{{ paper.title }}," <i>{{ paper.journal }}</i>, vol. {{paper.volume}}, no.{{paper.number}}, {{paper.month}}, {{paper.year}} </span> </li>
+    <li>	<span>{{ paper.author }}, "{{ paper.title }}," <i>{{ paper.journal }}</i>, vol. {{paper.volume}}, no.{{paper.number}}, {{paper.month}}, {{paper.year}}. <a href="http://dx.doi.org/{{paper.doi}}">DOI:{{ paper.doi }}</a> </span> </li>
 {% endif %}
 {% endfor %}
 </ol>
@@ -17,7 +17,7 @@ title: Publications
 <ol>
 {% for paper in sorted_pages reversed %}
 {% if paper.type == "inproceedings" %}
-    <li>        <span>{{ paper.author }}, "{{ paper.title }}," <i>{{ paper.booktitle }}</i>, {{paper.month}}, {{paper.year}} </span> </li>
+    <li>        <span>{{ paper.author }}, "{{ paper.title }}," <i>{{ paper.booktitle }}</i>, {{paper.month}}, {{paper.year}}. <a href="http://dx.doi.org/{{paper.doi}}">DOI:{{ paper.doi }}</a> </span> </li>
 {% endif %}
 {% endfor %}
 </ol>

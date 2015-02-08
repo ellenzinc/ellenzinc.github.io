@@ -502,6 +502,7 @@ aside#sidebar {
   width: 200px;
   min-height: 504px;
   padding-left: 20px;
+  margin-top: 50px;
   font-size: 12px;
   line-height: 1.3;
   background: transparent url(../images/sidebar-bg.jpg) 0 0 no-repeat;
@@ -875,6 +876,7 @@ nav ul li {
   #main-content,
   aside#sidebar {
     float: none;
+    margin-top: 200px;
     width: 100% ! important;
   }
   aside#sidebar {
