@@ -3,4 +3,5 @@ markdown: kramdown
 collections:
   publications:
     output: true
-
+  experiences:
+    output: true

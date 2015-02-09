@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Haining Lauches Site"
-data: 2015-2-8
+date: 2015-2-8
 ---
 
 Test, test! First blog post for my website!

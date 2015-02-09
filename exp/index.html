@@ -1,9 +1,23 @@
 ---
 layout: default
-name: Experiences
+title: Experiences
 ---
 <section id="main-content">
 <div class="content-wrapper">
-To appear...
+
+{% assign sorted_pages = (site.experiences | sort: 'end_date', 'first') %}
+
+{% for exp in sorted_pages reversed %}
+
+<h2>{{ exp.title }} at {{exp.organization}}</h2>
+
+<span>{{ exp.location  }}  </span >
+{% if exp.end_date < 2015.12 %}
+<span style="color:#3a5fcd">[  {{ exp.start_date }} &mdash; {{ exp.end_date}} ] </span>
+{% else %}
+<span style="color:#3a5fcd">[  {{ exp.start_date }} &mdash; {{ exp.end_date }} (expected) ] </span> 
+{% endif %}
+<p>{{ exp.content }} </p>
+{% endfor %}
 </div>
 </section>
